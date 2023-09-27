@@ -19,10 +19,7 @@ contract SimpleCardNFTFactory is ERC721 {
         
         //optional
         string company;
-        string university;
-        string major;
         string phone;
-        string portfolio;
     }
 
     mapping(address  => SimpleCardInfo ) private _infos; //issuer가 발급한 명함 정보
@@ -38,10 +35,7 @@ contract SimpleCardNFTFactory is ERC721 {
         string name,
         string email,
         string company,
-        string university,
-        string major,
-        string phone,
-        string portfolio
+        string phone
     );
 
     event SimpleCardNFTMinted(
@@ -78,25 +72,19 @@ contract SimpleCardNFTFactory is ERC721 {
         string memory _name, 
         string memory _email,
         string memory _company,
-        string memory _university,
-        string memory _major,
-        string memory _phone,
-        string memory _portfolio
+        string memory _phone
     )public{
         SimpleCardInfo memory simpleCardInfo = SimpleCardInfo({
             name:_name,
             email:_email,
             issuer: msg.sender,
             company:_company,
-            university:_university,
-            major:_major,
-            phone:_phone,
-            portfolio:_portfolio
+            phone:_phone
         });
                
         _infos[msg.sender] = simpleCardInfo;
 
-        emit SimpleCardInfoRegistered(msg.sender, _name, _email, _company, _university, _major, _phone, _portfolio);
+        emit SimpleCardInfoRegistered(msg.sender, _name, _email, _company, _phone);
     } 
 
     function mintSimpleCardNFT () public payable isSimpleCardInfoRegistered{ //자신의 명함 NFT 한 개 발급      

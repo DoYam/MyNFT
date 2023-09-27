@@ -36,13 +36,10 @@ async function main() {
   ) as SimpleCardNFTFactory;
 
   await contract.registerSimpleCardInfo(
-    "Tina",
-    "seungeun020309@gmail.com",
-    "NO_Company",
-    "Sookmyung Women's University",
-    "Mechanical Systems Engineering",
+    "Sydney",
+    "Sydney@lansik.us",
+    "Glucofit",
     "010-0000-0000",
-    "https://github.com/Learning-N-Running"
   );
   console.log("Simple Card Info Registered");
 

@@ -24,13 +24,10 @@ describe("SimpleCardNFTFactory", () => {
       await simpleCardNFTFactory
         .connect(addr1)
         .registerSimpleCardInfo(
-          "Tina",
-          "seungeun020309@gmail.com",
-          "NO_Company",
-          "Sookmyung Women's University",
-          "Mechanical Systems Engineering",
+          "Sydney",
+          "Sydney@lansik.us",
+          "Glucofit",
           "010-0000-0000",
-          "https://github.com/Learning-N-Running"
         );
       const simpleCardInfo = await simpleCardNFTFactory.getSimpleCardInfo(
         await addr1.getAddress()
@@ -44,13 +41,10 @@ describe("SimpleCardNFTFactory", () => {
       await simpleCardNFTFactory
         .connect(addr1)
         .registerSimpleCardInfo(
-          "Tina",
-          "seungeun020309@gmail.com",
-          "no_Company",
-          "Sookmyung Women's University",
-          "Mechanical Systems Engineering",
+          "Sydney",
+          "Sydney@lansik.us",
+          "Glucofit",
           "010-0000-0000",
-          "https://github.com/Learning-N-Running"
         );
       await simpleCardNFTFactory.connect(addr1).mintSimpleCardNFT();
       expect(
@@ -62,13 +56,10 @@ describe("SimpleCardNFTFactory", () => {
       await simpleCardNFTFactory
         .connect(addr1)
         .registerSimpleCardInfo(
-          "Tina",
-          "seungeun020309@gmail.com",
-          "no_Company",
-          "Sookmyung Women's University",
-          "Mechanical Systems Engineering",
+          "Sydney",
+          "Sydney@lansik.us",
+          "Glucofit",
           "010-0000-0000",
-          "https://github.com/Learning-N-Running"
         );
       await simpleCardNFTFactory
         .connect(addr1)

@@ -1,4 +1,4 @@
-# 명함 NFT 개인 과제 예시(simple ver.)
+<!-- # 명함 NFT 개인 과제 예시(simple ver.)
 이 예시를 실행해보시고 싶다면 아래의 단계대로 수행해주세요.<br/>
 ### bv-cardNFT-example-simple-ver.(예시 프로젝트) clone 받기
 먼저 클론받을 위치(ex. Desktop, 바탕화면)으로 이동하셔서(windows의 경우 cmd, Mac의 경우 terminal을 이용해)<br/>
@@ -59,4 +59,4 @@ npx hardhat run --network sepolia scripts/mintAndTransfer.ts
 
 
 
-
+ -->
